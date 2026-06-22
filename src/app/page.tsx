@@ -28,7 +28,7 @@ const sections = [
 ];
 
 const socials = [
-  { label: "Instagram", href: "https://instagram.com/chloe.dietz" },
+  { label: "Instagram", href: "https://www.instagram.com/chloebdietz/" },
   { label: "TikTok", href: "https://tiktok.com/@chloe.dietz" },
   { label: "YouTube", href: "https://youtube.com/@chloe.dietz" },
   { label: "Facebook", href: "https://facebook.com/chloe.dietz" },
