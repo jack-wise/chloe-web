@@ -6,28 +6,28 @@
    ========================================================================= */
 
 :root {
-  /* Palette: Sea Spray / Baby Blue / Matcha / Sunshine / Bubble Gum / Blush.
-     Cool pastel base, deep-teal anchor, bubble-gum pink as the pop. No orange. */
-  --bg:        #f5fbfb;   /* soft cool white */
-  --bg-deep:   #2f4f4a;   /* deep teal (band / footer anchor) */
-  --surface:   #ffffff;
-  --surface-2: #eaf5f6;   /* light sea spray */
-  --ink:       #2c4843;   /* deep teal text */
-  --ink-soft:  #6c7e7a;
-  --line:      #dcebec;
-  --accent:    #5f9398;   /* dusty teal (primary — no pink) */
-  --accent-2:  #7fb1b3;   /* sea-spray teal (secondary) */
-  --pink:      #d4eaec;   /* soft sea-spray (glows / rings / placeholders) */
-  --blush:     #d4eaec;
-  --blue:      #bad6da;   /* sea spray */
-  --babyblue:  #e1f2f4;   /* baby blue */
+  /* Warm cream base + cheerful sky-blue & golden-yellow accents.
+     Linen background, warm whites, deep teal-navy anchor. No grey, no pink. */
+  --bg:        #f7ede2;   /* warm linen / cream */
+  --bg-deep:   #29505a;   /* deep teal-navy anchor */
+  --surface:   #fffdf8;   /* warm white (not clinical) */
+  --surface-2: #fbf1e0;   /* soft cream */
+  --ink:       #3a342c;   /* warm espresso text */
+  --ink-soft:  #7d7264;
+  --line:      #ecdcc6;   /* warm cream line */
+  --accent:    #4f9fc0;   /* friendly sky blue (primary) */
+  --accent-2:  #f3c34e;   /* golden yellow (warm secondary) */
+  --pink:      #ffe3a8;   /* soft sunshine (glows / rings / placeholders) */
+  --blush:     #ffe3a8;
+  --blue:      #bfe0ec;   /* soft sky blue (brighter, less grey) */
+  --babyblue:  #e3f1f6;   /* baby blue */
   --matcha:    #dddd7b;
   --sunshine:  #ffe797;
-  --teal:      #84a59d;   /* muted teal (accents) */
-  --teal-ink:  #2c3c37;
-  --on-deep:   #eef5f3;
-  --on-deep-soft: #bcd0cb;
-  --shadow:    0 18px 50px -24px rgba(40, 70, 64, .26);
+  --teal:      #4f9fc0;
+  --teal-ink:  #2f4f57;   /* deep blue text on light blue */
+  --on-deep:   #f3ece0;   /* cream text on deep */
+  --on-deep-soft: #bcd0cf;
+  --shadow:    0 18px 50px -24px rgba(80, 60, 30, .26);
   --radius:    18px;
   --shell:     1160px;
 }
@@ -108,7 +108,7 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 }
 .ticker-clip { overflow: hidden; flex: 1; }
 .ticker-track { display: inline-flex; gap: 48px; white-space: nowrap; padding-left: 100%; animation: ticker 38s linear infinite; }
-.ticker-track span { font-size: .82rem; letter-spacing: .02em; color: #4a6159; }
+.ticker-track span { font-size: .82rem; letter-spacing: .02em; color: #3f5b63; }
 .ticker-track span::before { content: "✦"; color: var(--accent); margin-right: 48px; }
 @keyframes ticker { to { transform: translateX(-100%); } }
 @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; padding-left: 24px; } }
@@ -117,8 +117,8 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 .hero { position: relative; padding: 96px 0 64px; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .hero-glow { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .5; }
-.glow-a { width: 480px; height: 480px; background: radial-gradient(circle, rgba(186,214,218,.85), transparent 70%); top: -120px; right: -60px; }
-.glow-b { width: 460px; height: 460px; background: radial-gradient(circle, rgba(255,231,151,.45), transparent 70%); bottom: -160px; left: -80px; }
+.glow-a { width: 480px; height: 480px; background: radial-gradient(circle, rgba(191,224,236,.9), transparent 70%); top: -120px; right: -60px; }
+.glow-b { width: 460px; height: 460px; background: radial-gradient(circle, rgba(255,227,168,.75), transparent 70%); bottom: -160px; left: -80px; }
 .hero-inner { position: relative; z-index: 1; text-align: center; }
 .hero-kicker {
   font-size: .8rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase;
@@ -210,7 +210,7 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 .card-meta { font-size: .8rem; color: var(--ink-soft); margin-top: auto; }
 
 /* ============================ GALLERY ============================ */
-.gallery { padding: 88px 0; background: var(--babyblue); }   /* baby blue */
+.gallery { padding: 88px 0; background: #fbeccb; }   /* soft sunshine cream — warmth */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
 .gallery-item {
   position: relative; aspect-ratio: 1; border-radius: 12px; overflow: hidden; cursor: pointer;
