@@ -1,29 +1,31 @@
 /* =========================================================================
    Chloe Bella Dietz — personal/creator brand site.
-   Elegant editorial theme: Cormorant Garamond (display serif) + Jost (UI/body).
+   Elegant editorial theme: Playfair Display (display serif) + Jost (UI/body).
    Structure mirrors the AI Newsletter: shell, topbar, hero w/ reveals,
    tabbed sections, band, footer, modal + lightbox. Data-driven via app.js.
    ========================================================================= */
 
 :root {
   /* Palette: Muted Teal / Cotton Rose / Linen / Light Coral / Honey Bronze,
-     with Sea Spray borrowed as a soft blue. Linen base, deep-teal footer/band,
-     light-coral primary + honey-bronze secondary. */
+     plus Sea Spray + Baby Blue. Linen base; sage-green band; sea-spray ticker;
+     baby-blue gallery; light-coral primary + honey-bronze secondary. */
   --bg:        #f7ede2;   /* linen */
-  --bg-deep:   #3e544e;   /* deep teal (footer / band) */
+  --bg-deep:   #4f6e64;   /* deep sage-green (footer anchor — green, not grey) */
   --surface:   #ffffff;
   --surface-2: #fbf3e8;   /* soft linen */
-  --ink:       #3a4a45;   /* deep teal-charcoal */
-  --ink-soft:  #7c776e;
-  --line:      #ecdcca;
+  --ink:       #34453f;   /* deep green-charcoal text */
+  --ink-soft:  #74786e;
+  --line:      #e8dcc9;
   --accent:    #f28482;   /* light coral */
   --accent-2:  #f6bd60;   /* honey bronze */
   --pink:      #f5cac3;   /* cotton rose */
   --yellow:    #fbe0a6;   /* soft honey */
   --blue:      #bad6da;   /* sea spray */
-  --teal:      #84a59d;   /* muted teal */
-  --on-deep:   #f7ede2;
-  --on-deep-soft: #b9c9c3;
+  --babyblue:  #e1f2f4;   /* baby blue */
+  --teal:      #84a59d;   /* muted teal (the true sage swatch) */
+  --teal-ink:  #2c3c37;   /* dark text for use on muted teal */
+  --on-deep:   #eef3f0;
+  --on-deep-soft: #c2d2cc;
   --shadow:    0 18px 50px -24px rgba(62, 84, 78, .28);
   --radius:    18px;
   --shell:     1160px;
@@ -48,7 +50,7 @@ a { color: inherit; }
 
 .shell { width: min(100% - 48px, var(--shell)); margin-inline: auto; }
 
-h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; letter-spacing: -0.01em; }
+h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; font-weight: 600; letter-spacing: -0.01em; }
 .accent { color: var(--accent); }
 
 /* ---------- scroll reveal ---------- */
@@ -69,7 +71,7 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 .topbar-inner { display: flex; align-items: center; gap: 24px; height: 68px; }
 .brand { text-decoration: none; margin-right: auto; }
 .brand-word {
-  font-family: "Cormorant Garamond", serif; font-weight: 600; font-size: 1.35rem;
+  font-family: "Playfair Display", serif; font-weight: 600; font-size: 1.35rem;
   letter-spacing: .14em; color: var(--ink);
 }
 .brand-word em { font-style: normal; color: var(--accent); }
@@ -95,7 +97,7 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 /* ============================ TICKER ============================ */
 .ticker {
   display: flex; align-items: center; gap: 16px;
-  background: var(--bg-deep); color: var(--on-deep);
+  background: var(--blue); color: var(--teal-ink);   /* sea spray */
   overflow: hidden; height: 42px;
 }
 .ticker-label {
@@ -105,8 +107,8 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 }
 .ticker-clip { overflow: hidden; flex: 1; }
 .ticker-track { display: inline-flex; gap: 48px; white-space: nowrap; padding-left: 100%; animation: ticker 38s linear infinite; }
-.ticker-track span { font-size: .82rem; letter-spacing: .02em; color: var(--on-deep-soft); }
-.ticker-track span::before { content: "✦"; color: var(--accent-2); margin-right: 48px; }
+.ticker-track span { font-size: .82rem; letter-spacing: .02em; color: #4a6159; }
+.ticker-track span::before { content: "✦"; color: var(--accent); margin-right: 48px; }
 @keyframes ticker { to { transform: translateX(-100%); } }
 @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; padding-left: 24px; } }
 
@@ -151,7 +153,7 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
   border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
 }
 .stat { text-align: center; }
-.stat-num { display: block; font-family: "Cormorant Garamond", serif; font-size: 2.4rem; font-weight: 600; color: var(--accent); }
+.stat-num { display: block; font-family: "Playfair Display", serif; font-size: 2.4rem; font-weight: 600; color: var(--accent); }
 .stat-label { display: block; font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); margin-top: 4px; }
 
 /* ============================ SECTION HEAD ============================ */
@@ -171,12 +173,12 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
   display: flex; align-items: center; justify-content: center;
   background-size: cover; background-position: center;
 }
-.portrait-mono { font-family: "Cormorant Garamond", serif; font-size: 4rem; color: #fff; opacity: .7; letter-spacing: .1em; }
+.portrait-mono { font-family: "Playfair Display", serif; font-size: 4rem; color: #fff; opacity: .7; letter-spacing: .1em; }
 .portrait-frame.has-photo .portrait-mono { display: none; }
 .about-bio { font-size: 1.18rem; line-height: 1.7; color: var(--ink); }
 .fact-list { list-style: none; padding: 0; margin: 32px 0 0; display: flex; gap: 36px; flex-wrap: wrap; }
 .fact-list li { display: flex; flex-direction: column; }
-.fact-list li span { font-family: "Cormorant Garamond", serif; font-size: 1.9rem; color: var(--accent); }
+.fact-list li span { font-family: "Playfair Display", serif; font-size: 1.9rem; color: var(--accent); }
 .fact-list li { font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); }
 
 /* ============================ WORK (TABS) ============================ */
@@ -203,11 +205,11 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 }
 .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--accent); }
 .card-eyebrow { font-size: .68rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
-.card-title { font-family: "Cormorant Garamond", serif; font-size: 1.3rem; line-height: 1.25; margin: 0; }
+.card-title { font-family: "Playfair Display", serif; font-size: 1.3rem; line-height: 1.25; margin: 0; }
 .card-meta { font-size: .8rem; color: var(--ink-soft); margin-top: auto; }
 
 /* ============================ GALLERY ============================ */
-.gallery { padding: 88px 0; background: var(--surface-2); }
+.gallery { padding: 88px 0; background: var(--babyblue); }   /* baby blue */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
 .gallery-item {
   position: relative; aspect-ratio: 1; border-radius: 12px; overflow: hidden; cursor: pointer;
@@ -222,12 +224,12 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 .gallery-item:hover { transform: scale(1.01); }
 
 /* ============================ VALUES BAND ============================ */
-.band { background: var(--bg-deep); color: var(--on-deep); padding: 84px 0; }
+.band { background: var(--teal); color: var(--teal-ink); padding: 84px 0; }   /* true muted-teal sage */
 .band-inner { text-align: center; }
 .band h2 { font-size: clamp(1.8rem, 4.5vw, 3rem); margin: 0 0 44px; line-height: 1.1; }
 .band-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: left; }
-.band-col h3 { font-family: "Cormorant Garamond", serif; font-size: 1.2rem; color: var(--accent-2); margin: 0 0 8px; }
-.band-col p { color: var(--on-deep-soft); margin: 0; }
+.band-col h3 { font-family: "Playfair Display", serif; font-size: 1.3rem; color: #fff; margin: 0 0 8px; }
+.band-col p { color: #354a43; margin: 0; }
 
 /* ============================ CONNECT ============================ */
 .connect { padding: 88px 0; }
@@ -244,11 +246,11 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 }
 .link-avatar-fallback {
   display: flex; align-items: center; justify-content: center;
-  font-family: "Cormorant Garamond", serif; font-size: 1.35rem; color: #fff;
+  font-family: "Playfair Display", serif; font-size: 1.35rem; color: #fff;
   background: var(--accent); border-color: var(--accent);
 }
 .link-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.link-label { font-family: "Cormorant Garamond", serif; font-size: 1.15rem; }
+.link-label { font-family: "Playfair Display", serif; font-size: 1.15rem; }
 .link-handle { color: var(--accent); font-size: .88rem; overflow-wrap: anywhere; }
 
 /* ============================ FOOTER ============================ */
