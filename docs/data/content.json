@@ -94,8 +94,8 @@
       { "label": "Instagram", "href": "https://www.instagram.com/chloebdietz/", "handle": "@chloebdietz" },
       { "label": "Pageant Instagram", "href": "https://www.instagram.com/chloedietz.pageants/", "handle": "@chloedietz.pageants" },
       { "label": "Cycle Connections", "href": "https://www.instagram.com/cycleconnections/", "handle": "@cycleconnections · nonprofit" },
-      { "label": "YouTube", "href": "https://www.youtube.com/@chloebdietz", "handle": "@chloebdietz" },
-      { "label": "TikTok", "href": "https://www.tiktok.com/@chloebdietz", "handle": "@chloebdietz" },
+      { "label": "YouTube", "href": "https://www.youtube.com/@chloebdietz", "handle": "@chloebdietz", "icon": "assets/social-youtube.jpg" },
+      { "label": "TikTok", "href": "https://www.tiktok.com/@chloebdietz", "handle": "@chloebdietz", "icon": "assets/social-tiktok.jpg" },
       { "label": "Email", "href": "mailto:chloebdietz@gmail.com", "handle": "chloebdietz@gmail.com" }
     ]
   },

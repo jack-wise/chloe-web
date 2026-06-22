@@ -231,13 +231,23 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-s
 .connect { padding: 88px 0; }
 .links-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
 .link-card {
-  display: flex; flex-direction: column; gap: 4px; text-decoration: none;
+  display: flex; align-items: center; gap: 14px; text-decoration: none;
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 22px 24px; transition: transform .2s, box-shadow .2s, border-color .2s;
+  padding: 18px 22px; transition: transform .2s, box-shadow .2s, border-color .2s;
 }
 .link-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--accent); }
-.link-label { font-family: "Fraunces", serif; font-size: 1.2rem; }
-.link-handle { color: var(--accent); font-size: .9rem; }
+.link-avatar {
+  width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex: none;
+  border: 2px solid var(--pink); background: var(--surface-2);
+}
+.link-avatar-fallback {
+  display: flex; align-items: center; justify-content: center;
+  font-family: "Fraunces", serif; font-size: 1.35rem; color: #fff;
+  background: var(--accent); border-color: var(--accent);
+}
+.link-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.link-label { font-family: "Fraunces", serif; font-size: 1.15rem; }
+.link-handle { color: var(--accent); font-size: .88rem; overflow-wrap: anywhere; }
 
 /* ============================ FOOTER ============================ */
 footer { background: var(--bg-deep); color: var(--on-deep-soft); padding: 48px 0; }

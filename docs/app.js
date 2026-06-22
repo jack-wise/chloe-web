@@ -211,8 +211,22 @@ function renderConnect(c) {
     const a = el("a", "link-card");
     a.href = link.href || "#";
     if (!link.href || !link.href.startsWith("mailto:")) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
-    a.appendChild(el("span", "link-label", link.label));
-    if (link.handle) a.appendChild(el("span", "link-handle", link.handle));
+    // avatar: profile photo if provided, else a colored initial circle
+    if (link.icon) {
+      const img = el("img", "link-avatar");
+      img.src = link.icon; img.alt = link.label || ""; img.loading = "lazy";
+      img.addEventListener("error", () => {
+        const fb = el("span", "link-avatar link-avatar-fallback", (link.label || "?").trim()[0].toUpperCase());
+        img.replaceWith(fb);
+      });
+      a.appendChild(img);
+    } else {
+      a.appendChild(el("span", "link-avatar link-avatar-fallback", (link.label || "?").trim()[0].toUpperCase()));
+    }
+    const txt = el("div", "link-text");
+    txt.appendChild(el("span", "link-label", link.label));
+    if (link.handle) txt.appendChild(el("span", "link-handle", link.handle));
+    a.appendChild(txt);
     grid.appendChild(a);
   }
 }
