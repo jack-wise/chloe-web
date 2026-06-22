@@ -8,26 +8,26 @@
 :root {
   /* Warm cream base + cheerful sky-blue & golden-yellow accents.
      Linen background, warm whites, deep teal-navy anchor. No grey, no pink. */
-  --bg:        #f7ede2;   /* warm linen / cream */
-  --bg-deep:   #29505a;   /* deep teal-navy anchor */
-  --surface:   #fffdf8;   /* warm white (not clinical) */
-  --surface-2: #fbf1e0;   /* soft cream */
-  --ink:       #3a342c;   /* warm espresso text */
-  --ink-soft:  #7d7264;
-  --line:      #ecdcc6;   /* warm cream line */
-  --accent:    #6b9fb2;   /* sea-spray blue, deepened for contrast (primary) */
-  --accent-2:  #f3c34e;   /* golden yellow (warm secondary) */
-  --pink:      #ffe3a8;   /* soft sunshine (glows / rings / placeholders) */
-  --blush:     #ffe3a8;
-  --blue:      #bad6da;   /* sea spray (exact) */
-  --babyblue:  #e1f2f4;   /* baby blue (exact) */
+  --bg:        #f7ede2;   /* linen */
+  --bg-deep:   #4f6e64;   /* deep sage-green anchor (band / footer) */
+  --surface:   #fffdf8;   /* warm white */
+  --surface-2: #fbf3e8;   /* soft linen */
+  --ink:       #3c4640;   /* deep sage-charcoal text */
+  --ink-soft:  #7a766b;
+  --line:      #ecdcc9;
+  --accent:    #f28482;   /* light coral (primary) */
+  --accent-2:  #f6bd60;   /* honey bronze (secondary) */
+  --pink:      #f5cac3;   /* cotton rose (glows / rings / placeholders) */
+  --blush:     #f5cac3;
+  --blue:      #bad6da;   /* sea spray (available accent) */
+  --babyblue:  #e1f2f4;
   --matcha:    #dddd7b;
   --sunshine:  #ffe797;
-  --teal:      #6b9fb2;
-  --teal-ink:  #2f4f57;   /* deep blue text on light blue */
+  --teal:      #84a59d;   /* muted teal */
+  --teal-ink:  #2c3c37;
   --on-deep:   #f3ece0;   /* cream text on deep */
-  --on-deep-soft: #bcd0cf;
-  --shadow:    0 18px 50px -24px rgba(80, 60, 30, .26);
+  --on-deep-soft: #c8d6cf;
+  --shadow:    0 18px 50px -24px rgba(70, 60, 40, .26);
   --radius:    18px;
   --shell:     1160px;
 }
@@ -98,7 +98,7 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 /* ============================ TICKER ============================ */
 .ticker {
   display: flex; align-items: center; gap: 16px;
-  background: var(--blue); color: var(--teal-ink);   /* sea spray */
+  background: var(--teal); color: var(--teal-ink);   /* muted teal */
   overflow: hidden; height: 42px;
 }
 .ticker-label {
@@ -108,7 +108,7 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 }
 .ticker-clip { overflow: hidden; flex: 1; }
 .ticker-track { display: inline-flex; gap: 48px; white-space: nowrap; padding-left: 100%; animation: ticker 38s linear infinite; }
-.ticker-track span { font-size: .82rem; letter-spacing: .02em; color: #3f5b63; }
+.ticker-track span { font-size: .82rem; letter-spacing: .02em; color: #36443e; }
 .ticker-track span::before { content: "✦"; color: var(--accent); margin-right: 48px; }
 @keyframes ticker { to { transform: translateX(-100%); } }
 @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; padding-left: 24px; } }
@@ -117,8 +117,8 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 .hero { position: relative; padding: 96px 0 64px; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .hero-glow { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .5; }
-.glow-a { width: 500px; height: 500px; background: radial-gradient(circle, rgba(186,214,218,.95), transparent 70%); top: -120px; right: -60px; }
-.glow-b { width: 460px; height: 460px; background: radial-gradient(circle, rgba(255,231,151,.7), transparent 70%); bottom: -160px; left: -80px; }
+.glow-a { width: 500px; height: 500px; background: radial-gradient(circle, rgba(245,202,195,.9), transparent 70%); top: -120px; right: -60px; }
+.glow-b { width: 460px; height: 460px; background: radial-gradient(circle, rgba(132,165,157,.6), transparent 70%); bottom: -160px; left: -80px; }
 .hero-inner { position: relative; z-index: 1; text-align: center; }
 .hero-kicker {
   font-size: .8rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase;
@@ -210,7 +210,7 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 .card-meta { font-size: .8rem; color: var(--ink-soft); margin-top: auto; }
 
 /* ============================ GALLERY ============================ */
-.gallery { padding: 88px 0; background: #fbeccb; }   /* soft sunshine cream — warmth */
+.gallery { padding: 88px 0; background: var(--pink); }   /* cotton rose */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
 .gallery-item {
   position: relative; aspect-ratio: 1; border-radius: 12px; overflow: hidden; cursor: pointer;
@@ -229,7 +229,7 @@ h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600
 .band-inner { text-align: center; }
 .band h2 { font-size: clamp(1.8rem, 4.5vw, 3rem); margin: 0 0 44px; line-height: 1.1; }
 .band-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: left; }
-.band-col h3 { font-family: "Cormorant Garamond", serif; font-size: 1.3rem; color: var(--sunshine); margin: 0 0 8px; }
+.band-col h3 { font-family: "Cormorant Garamond", serif; font-size: 1.3rem; color: var(--accent-2); margin: 0 0 8px; }
 .band-col p { color: var(--on-deep-soft); margin: 0; }
 
 /* ============================ CONNECT ============================ */
