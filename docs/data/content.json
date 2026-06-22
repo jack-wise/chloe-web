@@ -1,0 +1,105 @@
+{
+  "_README": "EDIT THIS FILE TO CHANGE THE SITE. It drives every section. No code changes needed for content — just edit values here, commit, and the live site updates. Replace anything marked [PLACEHOLDER].",
+
+  "profile": {
+    "name": "Chloe Bella Dietz",
+    "wordmark": "CHLOE",
+    "wordmarkEm": "DIETZ",
+    "tagline": "Creator. Storyteller. [PLACEHOLDER — one line that says what you do.]",
+    "location": "[PLACEHOLDER — City, State]",
+    "role": "[PLACEHOLDER — e.g. Content Creator & Writer]",
+    "bio": "[PLACEHOLDER — a short 2–3 sentence bio in Chloe's voice. Who she is, what she makes, and why it matters. This is the first thing visitors read in the About section.]",
+    "facts": [
+      { "value": "[ — ]", "label": "[PLACEHOLDER — e.g. FOLLOWERS]" },
+      { "value": "[ — ]", "label": "[PLACEHOLDER — e.g. PROJECTS]" },
+      { "value": "[ — ]", "label": "[PLACEHOLDER — e.g. SINCE]" }
+    ]
+  },
+
+  "hero": {
+    "kicker": "[PLACEHOLDER — short eyebrow line, e.g. CREATOR · WRITER · LOCATION]",
+    "titleLines": ["CHLOE BELLA", "DIETZ"],
+    "sub": "[PLACEHOLDER — one or two sentences that introduce Chloe and the site. What will people find here?]",
+    "ctas": [
+      { "label": "SEE THE WORK", "href": "#work", "style": "solid" },
+      { "label": "CONNECT", "href": "#connect", "style": "ghost" }
+    ]
+  },
+
+  "ticker": [
+    "[PLACEHOLDER — a short highlight or latest update]",
+    "[PLACEHOLDER — another recent thing worth surfacing]",
+    "[PLACEHOLDER — link people to your newest work]"
+  ],
+
+  "work": {
+    "intro": "[PLACEHOLDER — one line describing the work section.]",
+    "categories": [
+      { "id": "featured", "label": "FEATURED", "note": "HIGHLIGHTS" },
+      { "id": "projects", "label": "PROJECTS", "note": "WORK" },
+      { "id": "press", "label": "PRESS", "note": "MENTIONS" }
+    ],
+    "items": [
+      {
+        "category": "featured",
+        "title": "[PLACEHOLDER — title of a featured piece]",
+        "eyebrow": "FEATURED",
+        "summary": "[PLACEHOLDER — 1–2 sentences about this piece. Shown when the card is opened.]",
+        "date": "2026",
+        "url": "https://example.com",
+        "source": "[PLACEHOLDER — where it lives]"
+      },
+      {
+        "category": "projects",
+        "title": "[PLACEHOLDER — a project name]",
+        "eyebrow": "PROJECT",
+        "summary": "[PLACEHOLDER — what this project is and your role in it.]",
+        "date": "2026",
+        "url": "https://example.com",
+        "source": "[PLACEHOLDER]"
+      },
+      {
+        "category": "press",
+        "title": "[PLACEHOLDER — a press mention or feature]",
+        "eyebrow": "PRESS",
+        "summary": "[PLACEHOLDER — what was said and where.]",
+        "date": "2026",
+        "url": "https://example.com",
+        "source": "[PLACEHOLDER — publication]"
+      }
+    ]
+  },
+
+  "gallery": {
+    "intro": "[PLACEHOLDER — one line for the gallery.]",
+    "images": [
+      { "src": "assets/gallery-1.jpg", "caption": "[PLACEHOLDER]" },
+      { "src": "assets/gallery-2.jpg", "caption": "[PLACEHOLDER]" },
+      { "src": "assets/gallery-3.jpg", "caption": "[PLACEHOLDER]" }
+    ]
+  },
+
+  "band": {
+    "title": ["MADE WITH INTENTION.", "SHARED WITH HEART."],
+    "cols": [
+      { "h": "[PLACEHOLDER — value 1]", "p": "[PLACEHOLDER — one sentence.]" },
+      { "h": "[PLACEHOLDER — value 2]", "p": "[PLACEHOLDER — one sentence.]" },
+      { "h": "[PLACEHOLDER — value 3]", "p": "[PLACEHOLDER — one sentence.]" }
+    ]
+  },
+
+  "connect": {
+    "intro": "[PLACEHOLDER — invite people to reach out or follow.]",
+    "links": [
+      { "label": "Instagram", "href": "https://instagram.com/", "handle": "@[PLACEHOLDER]" },
+      { "label": "TikTok", "href": "https://tiktok.com/", "handle": "@[PLACEHOLDER]" },
+      { "label": "YouTube", "href": "https://youtube.com/", "handle": "[PLACEHOLDER]" },
+      { "label": "Email", "href": "mailto:[PLACEHOLDER]@example.com", "handle": "[PLACEHOLDER]@example.com" }
+    ]
+  },
+
+  "footer": {
+    "fine": "© 2026 Chloe Bella Dietz. All rights reserved.",
+    "meta": ["[PLACEHOLDER — optional credit line]", "Built with care."]
+  }
+}

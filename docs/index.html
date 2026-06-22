@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chloe Bella Dietz</title>
+  <meta name="description" content="The official site of Chloe Bella Dietz — creator, storyteller, and the work she shares." />
+  <meta name="theme-color" content="#1a1410" />
+  <meta property="og:title" content="Chloe Bella Dietz" />
+  <meta property="og:description" content="Creator, storyteller — the official site of Chloe Bella Dietz." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <!-- Versioned asset URLs: a redesign renames classes/ids, so stale cached
+       CSS/JS against fresh HTML renders an unstyled page. Bump v on rewrites. -->
+  <link rel="stylesheet" href="style.css?v=1" />
+</head>
+<body>
+
+  <!-- ======== TOP NAV ======== -->
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="./" aria-label="Home">
+        <span class="brand-word" id="brand-word">CHLOE<em> DIETZ</em></span>
+      </a>
+      <nav class="topnav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#connect">Connect</a>
+      </nav>
+      <a class="nav-cta" href="#connect">SAY HELLO</a>
+    </div>
+  </header>
+
+  <!-- ======== LIVE HIGHLIGHT TICKER ======== -->
+  <div class="ticker" aria-label="Latest highlights">
+    <span class="ticker-label">LATEST</span>
+    <div class="ticker-clip"><div class="ticker-track" id="ticker-track"></div></div>
+  </div>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-glow glow-a"></div>
+      <div class="hero-glow glow-b"></div>
+    </div>
+    <div class="shell hero-inner">
+      <p class="hero-kicker reveal" id="hero-kicker">—</p>
+      <h1 class="hero-title" id="hero-title"></h1>
+      <p class="hero-sub reveal d4" id="hero-sub">—</p>
+      <div class="hero-ctas reveal d5" id="hero-ctas"></div>
+    </div>
+    <div class="shell statband reveal d6" id="statband"></div>
+  </section>
+
+  <!-- ======== ABOUT ======== -->
+  <section class="about" id="about">
+    <div class="shell about-grid">
+      <div class="about-portrait reveal" aria-hidden="true">
+        <div class="portrait-frame" id="portrait-frame">
+          <span class="portrait-mono" id="portrait-mono">CBD</span>
+        </div>
+      </div>
+      <div class="about-copy">
+        <div class="section-head reveal">
+          <h2>ABOUT<span class="accent">.</span></h2>
+          <p class="section-sub" id="about-role">—</p>
+        </div>
+        <p class="about-bio reveal" id="about-bio">—</p>
+        <ul class="fact-list reveal" id="about-facts"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== WORK (TABS) ======== -->
+  <main id="work" class="work">
+    <div class="shell">
+      <div class="section-head reveal">
+        <h2>THE WORK<span class="accent">.</span></h2>
+        <p class="section-sub" id="work-intro">—</p>
+      </div>
+      <div class="tabbar" role="tablist" aria-label="Work sections" id="work-tabs"></div>
+      <div id="work-panels"></div>
+      <p id="work-empty" class="empty" hidden>Nothing here yet.</p>
+    </div>
+  </main>
+
+  <!-- ======== GALLERY ======== -->
+  <section class="gallery" id="gallery">
+    <div class="shell">
+      <div class="section-head reveal">
+        <h2>GALLERY<span class="accent">.</span></h2>
+        <p class="section-sub" id="gallery-intro">—</p>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- ======== VALUES BAND ======== -->
+  <section class="band">
+    <div class="shell band-inner reveal">
+      <h2 id="band-title"></h2>
+      <div class="band-cols" id="band-cols"></div>
+    </div>
+  </section>
+
+  <!-- ======== CONNECT ======== -->
+  <section class="connect" id="connect">
+    <div class="shell">
+      <div class="section-head reveal">
+        <h2>CONNECT<span class="accent">.</span></h2>
+        <p class="section-sub" id="connect-intro">—</p>
+      </div>
+      <div class="links-grid" id="links-grid"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="shell foot-inner">
+      <div>
+        <span class="brand-word foot-brand">CHLOE<em> DIETZ</em></span>
+        <p class="foot-fine" id="foot-fine">—</p>
+      </div>
+      <div class="foot-meta" id="foot-meta"></div>
+    </div>
+  </footer>
+
+  <!-- ======== IMAGE LIGHTBOX (gallery) ======== -->
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <figure class="lightbox-figure" role="dialog" aria-modal="true" aria-label="Image, enlarged">
+      <button class="modal-close lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+      <img id="lightbox-img" src="" alt="Enlarged image" />
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <!-- ======== WORK READER (in-site overlay) ======== -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <p class="modal-eyebrow" id="modal-eyebrow"></p>
+      <h3 class="modal-title" id="modal-title"></h3>
+      <div class="modal-block">
+        <p id="modal-summary"></p>
+      </div>
+      <div class="modal-foot">
+        <a class="btn btn-ghost btn-sm" id="modal-source" href="#" target="_blank" rel="noopener noreferrer">VIEW ↗</a>
+        <button class="btn btn-solid btn-sm" id="modal-done">CLOSE</button>
+      </div>
+    </article>
+  </div>
+
+  <noscript><p class="shell empty">This page needs JavaScript to render <code>data/content.json</code>.</p></noscript>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
