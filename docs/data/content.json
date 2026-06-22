@@ -96,7 +96,7 @@
       { "label": "Cycle Connections", "href": "https://www.instagram.com/cycleconnections/", "handle": "@cycleconnections · nonprofit", "icon": "assets/social-ig-cycle.jpg" },
       { "label": "YouTube", "href": "https://www.youtube.com/@chloebdietz", "handle": "@chloebdietz", "icon": "assets/social-youtube.jpg" },
       { "label": "TikTok", "href": "https://www.tiktok.com/@chloebdietz", "handle": "@chloebdietz", "icon": "assets/social-tiktok.jpg" },
-      { "label": "Email", "href": "mailto:chloebdietz@gmail.com", "handle": "chloebdietz@gmail.com" }
+      { "label": "Email", "href": "mailto:chloebdietz@gmail.com", "handle": "chloebdietz@gmail.com", "icon": "assets/social-email.jpg" }
     ]
   },
 
