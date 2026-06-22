@@ -89,12 +89,13 @@
   },
 
   "connect": {
-    "intro": "[PLACEHOLDER — invite people to reach out or follow.]",
+    "intro": "Find me across the internet — pageants, the nonprofit, and everyday life.",
     "links": [
-      { "label": "Instagram", "href": "https://instagram.com/", "handle": "@[PLACEHOLDER]" },
-      { "label": "TikTok", "href": "https://tiktok.com/", "handle": "@[PLACEHOLDER]" },
-      { "label": "YouTube", "href": "https://youtube.com/", "handle": "[PLACEHOLDER]" },
-      { "label": "Email", "href": "mailto:[PLACEHOLDER]@example.com", "handle": "[PLACEHOLDER]@example.com" }
+      { "label": "Instagram", "href": "https://www.instagram.com/chloebdietz/", "handle": "@chloebdietz" },
+      { "label": "Pageant Instagram", "href": "https://www.instagram.com/chloedietz.pageants/", "handle": "@chloedietz.pageants" },
+      { "label": "Cycle Connections", "href": "https://www.instagram.com/cycleconnections/", "handle": "@cycleconnections · nonprofit" },
+      { "label": "YouTube", "href": "https://www.youtube.com/@chloebdietz", "handle": "@chloebdietz" },
+      { "label": "TikTok", "href": "https://www.tiktok.com/@chloebdietz", "handle": "@chloebdietz" }
     ]
   },
 
