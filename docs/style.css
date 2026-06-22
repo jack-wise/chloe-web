@@ -37,7 +37,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family: "Jost", system-ui, -apple-system, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -48,7 +48,7 @@ a { color: inherit; }
 
 .shell { width: min(100% - 48px, var(--shell)); margin-inline: auto; }
 
-h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-spacing: -0.01em; }
+h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; letter-spacing: -0.01em; }
 .accent { color: var(--accent); }
 
 /* ---------- scroll reveal ---------- */
@@ -69,7 +69,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-s
 .topbar-inner { display: flex; align-items: center; gap: 24px; height: 68px; }
 .brand { text-decoration: none; margin-right: auto; }
 .brand-word {
-  font-family: "Fraunces", serif; font-weight: 600; font-size: 1.35rem;
+  font-family: "Cormorant Garamond", serif; font-weight: 600; font-size: 1.35rem;
   letter-spacing: .14em; color: var(--ink);
 }
 .brand-word em { font-style: normal; color: var(--accent); }
@@ -151,7 +151,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-s
   border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
 }
 .stat { text-align: center; }
-.stat-num { display: block; font-family: "Fraunces", serif; font-size: 2.4rem; font-weight: 600; color: var(--accent); }
+.stat-num { display: block; font-family: "Cormorant Garamond", serif; font-size: 2.4rem; font-weight: 600; color: var(--accent); }
 .stat-label { display: block; font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-soft); margin-top: 4px; }
 
 /* ============================ SECTION HEAD ============================ */
@@ -171,12 +171,12 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-s
   display: flex; align-items: center; justify-content: center;
   background-size: cover; background-position: center;
 }
-.portrait-mono { font-family: "Fraunces", serif; font-size: 4rem; color: #fff; opacity: .7; letter-spacing: .1em; }
+.portrait-mono { font-family: "Cormorant Garamond", serif; font-size: 4rem; color: #fff; opacity: .7; letter-spacing: .1em; }
 .portrait-frame.has-photo .portrait-mono { display: none; }
 .about-bio { font-size: 1.18rem; line-height: 1.7; color: var(--ink); }
 .fact-list { list-style: none; padding: 0; margin: 32px 0 0; display: flex; gap: 36px; flex-wrap: wrap; }
 .fact-list li { display: flex; flex-direction: column; }
-.fact-list li span { font-family: "Fraunces", serif; font-size: 1.9rem; color: var(--accent); }
+.fact-list li span { font-family: "Cormorant Garamond", serif; font-size: 1.9rem; color: var(--accent); }
 .fact-list li { font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); }
 
 /* ============================ WORK (TABS) ============================ */
@@ -203,7 +203,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-s
 }
 .card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--accent); }
 .card-eyebrow { font-size: .68rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
-.card-title { font-family: "Fraunces", serif; font-size: 1.3rem; line-height: 1.25; margin: 0; }
+.card-title { font-family: "Cormorant Garamond", serif; font-size: 1.3rem; line-height: 1.25; margin: 0; }
 .card-meta { font-size: .8rem; color: var(--ink-soft); margin-top: auto; }
 
 /* ============================ GALLERY ============================ */
@@ -226,7 +226,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-s
 .band-inner { text-align: center; }
 .band h2 { font-size: clamp(1.8rem, 4.5vw, 3rem); margin: 0 0 44px; line-height: 1.1; }
 .band-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: left; }
-.band-col h3 { font-family: "Fraunces", serif; font-size: 1.2rem; color: var(--accent-2); margin: 0 0 8px; }
+.band-col h3 { font-family: "Cormorant Garamond", serif; font-size: 1.2rem; color: var(--accent-2); margin: 0 0 8px; }
 .band-col p { color: var(--on-deep-soft); margin: 0; }
 
 /* ============================ CONNECT ============================ */
@@ -244,11 +244,11 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-s
 }
 .link-avatar-fallback {
   display: flex; align-items: center; justify-content: center;
-  font-family: "Fraunces", serif; font-size: 1.35rem; color: #fff;
+  font-family: "Cormorant Garamond", serif; font-size: 1.35rem; color: #fff;
   background: var(--accent); border-color: var(--accent);
 }
 .link-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.link-label { font-family: "Fraunces", serif; font-size: 1.15rem; }
+.link-label { font-family: "Cormorant Garamond", serif; font-size: 1.15rem; }
 .link-handle { color: var(--accent); font-size: .88rem; overflow-wrap: anywhere; }
 
 /* ============================ FOOTER ============================ */
