@@ -6,23 +6,25 @@
    ========================================================================= */
 
 :root {
-  /* Palette drawn from the existing chloedietz.com: soft playful pastels —
-     coral/pink primary, pale yellow + light blue accents, charcoal on off-white. */
-  --bg:        #fffbf9;   /* warm off-white */
-  --bg-deep:   #231f20;   /* charcoal (footer / band) */
+  /* Palette: Muted Teal / Cotton Rose / Linen / Light Coral / Honey Bronze,
+     with Sea Spray borrowed as a soft blue. Linen base, deep-teal footer/band,
+     light-coral primary + honey-bronze secondary. */
+  --bg:        #f7ede2;   /* linen */
+  --bg-deep:   #3e544e;   /* deep teal (footer / band) */
   --surface:   #ffffff;
-  --surface-2: #fff4ee;   /* blush cream */
-  --ink:       #231f20;   /* charcoal */
-  --ink-soft:  #6b6064;
-  --line:      #f3e3df;
-  --accent:    #ff7878;   /* coral */
-  --accent-2:  #ff9899;   /* salmon */
-  --pink:      #ffbfc0;
-  --yellow:    #fff2bd;
-  --blue:      #d6f0ff;
-  --on-deep:   #fffbf9;
-  --on-deep-soft: #b8a9ab;
-  --shadow:    0 18px 50px -24px rgba(80, 40, 45, .30);
+  --surface-2: #fbf3e8;   /* soft linen */
+  --ink:       #3a4a45;   /* deep teal-charcoal */
+  --ink-soft:  #7c776e;
+  --line:      #ecdcca;
+  --accent:    #f28482;   /* light coral */
+  --accent-2:  #f6bd60;   /* honey bronze */
+  --pink:      #f5cac3;   /* cotton rose */
+  --yellow:    #fbe0a6;   /* soft honey */
+  --blue:      #bad6da;   /* sea spray */
+  --teal:      #84a59d;   /* muted teal */
+  --on-deep:   #f7ede2;
+  --on-deep-soft: #b9c9c3;
+  --shadow:    0 18px 50px -24px rgba(62, 84, 78, .28);
   --radius:    18px;
   --shell:     1160px;
 }
@@ -112,8 +114,8 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-s
 .hero { position: relative; padding: 96px 0 64px; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .hero-glow { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .5; }
-.glow-a { width: 480px; height: 480px; background: radial-gradient(circle, rgba(255,191,192,.7), transparent 70%); top: -120px; right: -60px; }
-.glow-b { width: 460px; height: 460px; background: radial-gradient(circle, rgba(214,240,255,.8), transparent 70%); bottom: -160px; left: -80px; }
+.glow-a { width: 480px; height: 480px; background: radial-gradient(circle, rgba(245,202,195,.8), transparent 70%); top: -120px; right: -60px; }
+.glow-b { width: 460px; height: 460px; background: radial-gradient(circle, rgba(186,214,218,.85), transparent 70%); bottom: -160px; left: -80px; }
 .hero-inner { position: relative; z-index: 1; text-align: center; }
 .hero-kicker {
   font-size: .8rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase;
