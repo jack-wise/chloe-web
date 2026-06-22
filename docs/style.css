@@ -6,19 +6,24 @@
    ========================================================================= */
 
 :root {
-  --bg:        #faf6f0;   /* warm cream */
-  --bg-deep:   #1a1410;   /* espresso (footer / band) */
+  /* Palette drawn from the existing chloedietz.com: soft playful pastels —
+     coral/pink primary, pale yellow + light blue accents, charcoal on off-white. */
+  --bg:        #fffbf9;   /* warm off-white */
+  --bg-deep:   #231f20;   /* charcoal (footer / band) */
   --surface:   #ffffff;
-  --surface-2: #f3ece2;
-  --ink:       #211a14;   /* near-black warm */
-  --ink-soft:  #5c5046;
-  --line:      #e4d9c9;
-  --accent:    #c0683f;   /* terracotta */
-  --accent-2:  #b8924f;   /* warm gold */
-  --on-deep:   #f5ede2;
-  --on-deep-soft: #b6a795;
-  --shadow:    0 18px 50px -24px rgba(60, 40, 24, .35);
-  --radius:    16px;
+  --surface-2: #fff4ee;   /* blush cream */
+  --ink:       #231f20;   /* charcoal */
+  --ink-soft:  #6b6064;
+  --line:      #f3e3df;
+  --accent:    #ff7878;   /* coral */
+  --accent-2:  #ff9899;   /* salmon */
+  --pink:      #ffbfc0;
+  --yellow:    #fff2bd;
+  --blue:      #d6f0ff;
+  --on-deep:   #fffbf9;
+  --on-deep-soft: #b8a9ab;
+  --shadow:    0 18px 50px -24px rgba(80, 40, 45, .30);
+  --radius:    18px;
   --shell:     1160px;
 }
 
@@ -107,8 +112,8 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-s
 .hero { position: relative; padding: 96px 0 64px; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
 .hero-glow { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .5; }
-.glow-a { width: 480px; height: 480px; background: radial-gradient(circle, rgba(192,104,63,.5), transparent 70%); top: -120px; right: -60px; }
-.glow-b { width: 420px; height: 420px; background: radial-gradient(circle, rgba(184,146,79,.45), transparent 70%); bottom: -160px; left: -80px; }
+.glow-a { width: 480px; height: 480px; background: radial-gradient(circle, rgba(255,191,192,.7), transparent 70%); top: -120px; right: -60px; }
+.glow-b { width: 460px; height: 460px; background: radial-gradient(circle, rgba(214,240,255,.8), transparent 70%); bottom: -160px; left: -80px; }
 .hero-inner { position: relative; z-index: 1; text-align: center; }
 .hero-kicker {
   font-size: .8rem; font-weight: 600; letter-spacing: .24em; text-transform: uppercase;
@@ -159,12 +164,12 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-s
 .portrait-frame {
   position: relative; width: 100%; max-width: 360px; aspect-ratio: 4 / 5;
   border-radius: var(--radius); overflow: hidden;
-  background: linear-gradient(150deg, var(--surface-2), #e9dcc8);
+  background: linear-gradient(150deg, var(--pink), var(--blue));
   border: 1px solid var(--line); box-shadow: var(--shadow);
   display: flex; align-items: center; justify-content: center;
   background-size: cover; background-position: center;
 }
-.portrait-mono { font-family: "Fraunces", serif; font-size: 4rem; color: var(--accent); opacity: .35; letter-spacing: .1em; }
+.portrait-mono { font-family: "Fraunces", serif; font-size: 4rem; color: #fff; opacity: .7; letter-spacing: .1em; }
 .portrait-frame.has-photo .portrait-mono { display: none; }
 .about-bio { font-size: 1.18rem; line-height: 1.7; color: var(--ink); }
 .fact-list { list-style: none; padding: 0; margin: 32px 0 0; display: flex; gap: 36px; flex-wrap: wrap; }
@@ -204,7 +209,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; letter-s
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
 .gallery-item {
   position: relative; aspect-ratio: 1; border-radius: 12px; overflow: hidden; cursor: pointer;
-  background: linear-gradient(150deg, #e9dcc8, #d8c3a4); border: 1px solid var(--line);
+  background: linear-gradient(150deg, var(--pink), var(--blue)); border: 1px solid var(--line);
   background-size: cover; background-position: center; display: flex; align-items: flex-end;
 }
 .gallery-item figcaption {
